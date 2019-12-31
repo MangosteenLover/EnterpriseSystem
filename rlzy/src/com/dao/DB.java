@@ -21,7 +21,7 @@ public class DB
 	private String url = "jdbc:mysql://localhost:3306/rlzy";
 	
 	
-	//test test02
+	//test
 	public DB()
 	{
 		try
@@ -51,7 +51,7 @@ public class DB
 
 	public void doPstm(String sql, Object[] params)
 	{
-		if (sql != null && !sql.equals(""))
+		if (sql!= null &&!sql.equals(""))
 		{
 			if (params == null)
 				params = new Object[0];

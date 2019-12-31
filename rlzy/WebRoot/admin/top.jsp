@@ -24,7 +24,7 @@ String path = request.getContextPath();
 	}
 	#logo A {
 		COLOR: white
-	}
+	}000
 	FORM {
 		MARGIN: 0px
 	}

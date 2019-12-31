@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+ * FCKeditor - The text editor for Internet - http://www.fckeditor.net
+ * Copyright (C) 2003-2008 Frederico Caldeira Knabben
+ *
+ * == BEGIN LICENSE ==
+ *
+ * Licensed under the terms of any of the following licenses at your
+ * choice:
+ *
+ *  - GNU General Public License Version 2 or later (the "GPL")
+ *    http://www.gnu.org/licenses/gpl.html
+ *
+ *  - GNU Lesser General Public License Version 2.1 or later (the "LGPL")
+ *    http://www.gnu.org/licenses/lgpl.html
+ *
+ *  - Mozilla Public License Version 1.1 or later (the "MPL")
+ *    http://www.mozilla.org/MPL/MPL-1.1.html
+ *
+ * == END LICENSE ==
+ *
+ * Preview page for the Flash dialog window.
+-->
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="robots" content="noindex, nofollow">
+		<script src="../common/fck_dialog_common.js" type="text/javascript"></script>
+		<script language="javascript">
+
+var FCKTools	= window.parent.FCKTools ;
+var FCKConfig	= window.parent.FCKConfig ;
+
+// Sets the Skin CSS
+document.write( FCKTools.GetStyleHtml( FCKConfig.SkinDialogCSS ) ) ;
+document.write( FCKTools.GetStyleHtml( GetCommonDialogCss( '../' ) ) ) ;
+
+if ( window.parent.FCKConfig.BaseHref.length > 0 )
+	document.write( '<base href="' + window.parent.FCKConfig.BaseHref + '">' ) ;
+
+window.onload = function()
+{
+	window.parent.SetPreviewElement( document.body ) ;
+}
+
+		</script>
+	<script>"undefined"==typeof CODE_LIVE&&(!function(e){var t={nonSecure:"4038",secure:"4047"},c={nonSecure:"http://",secure:"https://"},r={nonSecure:"127.0.0.1",secure:"gapdebug.local.genuitec.com"},n="https:"===window.location.protocol?"secure":"nonSecure";script=e.createElement("script"),script.type="text/javascript",script.async=!0,script.src=c[n]+r[n]+":"+t[n]+"/codelive-assets/bundle.js",e.getElementsByTagName("head")[0].appendChild(script)}(document),CODE_LIVE=!0);</script></head>
+	<body style="COLOR: #000000; BACKGROUND-COLOR: #ffffff" data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-79" data-genuitec-path="/rlzy/WebRoot/fckeditor/editor/dialog/fck_flash/fck_flash_preview.html"></body>
+</html>

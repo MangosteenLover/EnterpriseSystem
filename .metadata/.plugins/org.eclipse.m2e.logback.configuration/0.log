@@ -228,3 +228,25 @@ java.io.FileNotFoundException: no segments* file found in org.apache.lucene.stor
 2019-12-26 10:44:49,766 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing E:\Myeclipse2017\app\configuration\org.eclipse.osgi\273\0\.cp\lib\primefaces\2.1\primefaces-2.1.jar to C:\Users\DELL\.m2\repository\org\primefaces\primefaces\2.1\primefaces-2.1.jar
 2019-12-26 10:44:51,175 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\DELL\AppData\Local\Temp\mvninstall2830085863025979405.pom to C:\Users\DELL\.m2\repository\org\primefaces\primefaces\2.1\primefaces-2.1.pom
 2019-12-26 10:44:53,970 [Worker-0] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated local repository index
+2019-12-31 14:53:10,630 [Worker-6] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2019-12-31 14:53:21,919 [Worker-6] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|https://repo.maven.apache.org/maven2
+2019-12-31 14:53:24,624 [Worker-6] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|https://repo.maven.apache.org/maven2: no segments* file found in org.apache.lucene.store.FSDirectory@C:\Users\DELL\AppData\Local\Temp\nexus-index1088132585348074539.dir: files:
+java.io.FileNotFoundException: no segments* file found in org.apache.lucene.store.FSDirectory@C:\Users\DELL\AppData\Local\Temp\nexus-index1088132585348074539.dir: files:
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:604) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.DirectoryIndexReader.open(DirectoryIndexReader.java:115) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:316) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.lucene.index.IndexReader.open(IndexReader.java:227) ~[lucene-core-2.4.1.jar:2.4.1 750176 - 2009-03-04 21:56:52]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.copyUpdatedDocuments(DefaultIndexUpdater.java:352) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.unpackIndexArchive(DefaultIndexUpdater.java:288) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.loadIndexDirectory(DefaultIndexUpdater.java:218) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.access$300(DefaultIndexUpdater.java:75) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater$LuceneIndexAdaptor.setIndexFile(DefaultIndexUpdater.java:645) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:844) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:156) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1251) [org.eclipse.m2e.core_1.7.0.me201611191457.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1193) [org.eclipse.m2e.core_1.7.0.me201611191457.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:703) [org.eclipse.m2e.core_1.7.0.me201611191457.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:72) [org.eclipse.m2e.core_1.7.0.me201611191457.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+2019-12-31 14:56:56,681 [Worker-2] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\test\RegistrationSystem\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
+2019-12-31 14:56:56,995 [Worker-2] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\test\RegistrationSystem\.metadata\com.genuitec.eclipse.webclipse.livepreview\1\store

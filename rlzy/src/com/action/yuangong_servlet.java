@@ -204,29 +204,7 @@ public class yuangong_servlet extends HttpServlet
 	}
 	
 	
-	/*public void yuangongEdit(HttpServletRequest req,HttpServletResponse res)
-	{
-		int id=Integer.parseInt(req.getParameter("id"));
-		String name=req.getParameter("name");
-		String sex=req.getParameter("sex");
-		String age=req.getParameter("age");
-		String tel=req.getParameter("tel");
-		String address=req.getParameter("address");
-		String zhiwei=req.getParameter("zhiwei");
-		
-		
-		String sql="update t_yuangong set name=?,sex=?,age=?,tel=?,address=?,zhiwei=? where id="+id;
-		Object[] params={name,sex,age,tel,address,zhiwei};
-		DB mydb=new DB();
-		mydb.doPstm(sql, params);
-		mydb.closed();
-		
-		req.setAttribute("message", "²Ù×÷³É¹¦");
-		req.setAttribute("path", "yuangong?type=yuangongMana");
-		
-        String targetURL = "/common/success.jsp";
-		dispatch(targetURL, req, res);
-	}*/
+	
 	
 	
 	

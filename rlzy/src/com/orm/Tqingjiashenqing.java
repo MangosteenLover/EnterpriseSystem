@@ -15,7 +15,6 @@ public class Tqingjiashenqing
 	
 	
 	
-	
 	public String getBeizhu()
 	{
 		return beizhu;
