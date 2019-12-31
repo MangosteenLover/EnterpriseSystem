@@ -30,10 +30,10 @@
         
         <script type="text/javascript">
             var s="${sessionScope.yuangong.shifoubumenlingdao}";
-            if(s=="fou")
+         <%--    if(s=="fou")
             {
                 window.location.href="<%=path %>/common/none.jsp";
-            }
+            } --%>
             
 		    function yuangongByOrg()
 		    {
